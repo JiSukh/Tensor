@@ -1,5 +1,4 @@
-import cv2 as cv
-import numpy as np
+
 import matplotlib.pyplot as plt
 from tensorflow.keras import datasets, layers, models
 
@@ -9,8 +8,6 @@ training_images = training_images / 255
 testing_images = testing_images / 255
 
 
-#Classifications which are classified within cifar10 dataset.
-class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog','horse', 'ship','truck']
 
 for i in range(16):
     plt.subplot(4,4,i+1)
